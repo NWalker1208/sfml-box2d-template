@@ -1,0 +1,13 @@
+cmake_minimum_required(VERSION 3.21)
+project(sfml-box2d-template)
+
+set(CMAKE_CXX_STANDARD 17)
+set(SFML_STATIC_LIBRARIES TRUE)
+
+find_package(SFML 2.5.1 COMPONENTS system window graphics network audio REQUIRED)
+find_package(Box2D 2.4.1 REQUIRED)
+
+include_directories(src ${SFML_INCLUDE_DIR} ${BOX2D_INCLUDE_DIR})
+add_executable(cpp_test src/main.cpp)
+
+target_link_libraries(cpp_test PRIVATE sfml-system sfml-window sfml-graphics sfml-audio sfml-network box2d::box2d)
