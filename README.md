@@ -1,5 +1,5 @@
 # SFML/Box2D Template
-This template provides a starting point for C++ projects that wish to use both SFML and Box2D.
+This CLion template project provides a starting point for C++ developers who plan to use both SFML and Box2D.
 In order for CMake to find SFML and Box2D, you must have both libraries installed.
 The instructions below are designed for Windows users.
 
